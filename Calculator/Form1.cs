@@ -81,135 +81,23 @@ namespace Calculator
 
         private void buttonNegative_Click(object sender, EventArgs e)
         {
-            if (result.Text[0] == '-')
-            {
-                result.Text = result.Text.Remove(0, 1);
-            }
-            else
-                result.Text = "-" + result.Text;
-        }
-
-        private void buttonPoint_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void buttonZero_Click(object sender, EventArgs e)
-        {
-            result.Text += '0';
-            CheckNumber();
-        }
-
-        private void buttonOne_Click(object sender, EventArgs e)
-        {
-            result.Text += '1';
-            CheckNumber();
-        }
-
-        private void buttonTwo_Click(object sender, EventArgs e)
-        {
-            result.Text += '2';
-            CheckNumber();
-        }
-
-        private void buttonThree_Click(object sender, EventArgs e)
-        {
-            result.Text += '3';
-            CheckNumber();
-        }
-
-        private void buttonFour_Click(object sender, EventArgs e)
-        {
-            result.Text += '4';
-            CheckNumber();
-        }
-
-        private void buttonFive_Click(object sender, EventArgs e)
-        {
-            result.Text += '5';
-            CheckNumber();
-        }
-
-        private void buttonSix_Click(object sender, EventArgs e)
-        {
-            result.Text += '6';
-            CheckNumber();
-        }
-
-        private void buttonSeven_Click(object sender, EventArgs e)
-        {
-            result.Text += '7';
-            CheckNumber();
-        }
-
-        private void buttonEight_Click(object sender, EventArgs e)
-        {
-            result.Text += '8';
-            CheckNumber();
-        }
-
-        private void buttonNine_Click(object sender, EventArgs e)
-        {
-            result.Text += '9';
-            CheckNumber();
-        }
-
-        private void buttonAdd_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonSub_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonMultiplication_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonDivision_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void buttonSqrt_Click(object sender, EventArgs e)
         {
-            if (Press())
-            {
-                calculator.SetValue(Convert.ToDouble(result.Text));
 
-                result.Text = calculator.Sqrt().ToString();
-
-                calculator.ClearValue();
-                ButtonClear();
-            }
         }
 
         private void buttonSquare_Click(object sender, EventArgs e)
         {
-            if (Press())
-            {
-                calculator.SetValue(Convert.ToDouble(result.Text));
 
-                result.Text = calculator.Square().ToString();
-
-                calculator.ClearValue();
-                ButtonClear();
-            }
         }
 
         private void buttonInverse_Click(object sender, EventArgs e)
         {
-            if (Press())
-            {
-                calculator.SetValue(Convert.ToDouble(result.Text));
-                
-                result.Text = calculator.Inverse().ToString();
 
-                calculator.ClearValue();
-            }
         }
 
         private void buttonResult_Click(object sender, EventArgs e)
@@ -238,14 +126,10 @@ namespace Calculator
                         textHistory.Text = result.Text;
                         break;
                 }
+
                 calculator.SetValue(Convert.ToDouble(result.Text));
                 calculator.SetOperator(string.Empty);
             }
-        }
-
-        private void buttonHistory_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void ButtonNum_Click(object sender, EventArgs e)
@@ -262,7 +146,6 @@ namespace Calculator
             }
             else
                 result.Text += button.Text;
-
         }
 
         private void buttonMath_Click(object sender, EventArgs e)
@@ -282,9 +165,38 @@ namespace Calculator
             {
                 textHistory.Text = $"{result.Text} {calculator.GetOperator()}";                
                 result.Text = string.Empty;
-            }
+            }         
+        }
 
-            
+        private void ButtonOperation_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            calculator.SetOperator(button.Text);
+            calculator.SetValue(Convert.ToDouble(result.Text));
+
+            switch (calculator.GetOperator())
+            {
+                case "√x":
+                    textHistory.Text = $"√({result.Text})";
+                    result.Text = calculator.Sqrt().ToString();
+                    break;
+                case "x²":
+                    textHistory.Text = $"({result.Text})²";
+                    result.Text = calculator.Square().ToString();
+                    break;
+                case "1/x":
+                    textHistory.Text = $"1/({result.Text})";
+                    result.Text = calculator.Inverse().ToString();
+                    break;
+                case "%":
+                    textHistory.Text = $"√({result.Text})";
+                    result.Text = calculator.Precent().ToString();
+                    break;
+                case "±":
+                    result.Text = calculator.ChangeSymbol().ToString();
+                    break;
+
+            }
         }
     }
 }

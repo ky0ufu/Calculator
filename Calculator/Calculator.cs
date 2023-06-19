@@ -41,39 +41,58 @@ namespace Calculator
         }
         public double Multiplication(double arg)
         {
-            return value * arg;
+            value *= arg;
+            return value;
         }
         public double Division(double arg)
         {
             if (arg == 0)
                 throw new DivideByZeroException();
-            return (value / arg);
+            value /= arg;
+            return value;
         }
         public double Add(double arg)
         {
-            return value + arg;
+            value += arg;
+            return value;
 
         }
         public double Substraction(double arg)
         {
-            return value - arg;
+            value -= arg;
+            return value;
         }
   
         public double Sqrt()
         {
-            return Math.Sqrt(value);
+            value = Math.Sqrt(value);
+            return value;
         }
         public double Square()
         {
-            return Math.Pow(value, 2);
+            value = Math.Pow(value, 2);
+            return value;
         }
 
         public double Inverse()
         {
             if (value != 0)
-                return 1 / value;
+            {
+                value = 1 / value;
+                return value;
+            }
             else
                 throw new Exception();
+        }
+        public double Precent()
+        {
+            value /= 100;
+            return value;
+        }
+        public double ChangeSymbol()
+        {
+            value *= -1;
+            return value;
         }
         public double GetMemory()
         {
