@@ -12,7 +12,7 @@ namespace Calculator
         void ClearValue();
         double Multiplication(double arg);
         double Division(double arg);
-        double Sum(double arg);
+        double Add(double arg);
         double Substraction(double arg);
         double Sqrt();
         double Square();

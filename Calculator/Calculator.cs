@@ -10,15 +10,29 @@ namespace Calculator
     {
         private double value = 0;
         private double memory = 0;
+        private string operation = string.Empty;
 
         public Calculator()
         {
             value = 0;
             memory = 0;
         }
+        public double GetValue()
+        {
+            return value;
+        }
+
         public void SetValue(double value)
         {
             this.value = value;
+        }
+        public void SetOperator(string operation) 
+        {
+            this.operation = operation;
+        }
+        public string GetOperator()
+        {
+            return operation;
         }
 
         public void ClearValue()
@@ -35,7 +49,7 @@ namespace Calculator
                 throw new DivideByZeroException();
             return (value / arg);
         }
-        public double Sum(double arg)
+        public double Add(double arg)
         {
             return value + arg;
 

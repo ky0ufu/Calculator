@@ -14,6 +14,7 @@ namespace Calculator
     {
         public Calculator calculator;
         public int count;
+        bool enterVal = false;
 
         public Form1()
         {
@@ -71,6 +72,7 @@ namespace Calculator
         private void buttonClearEntry_Click(object sender, EventArgs e)
         {
             result.Text = "0";
+            textHistory.Text = string.Empty;
             calculator.ClearValue();
             ButtonClear();
             count = 0;
@@ -89,10 +91,7 @@ namespace Calculator
 
         private void buttonPoint_Click(object sender, EventArgs e)
         {
-            if ((result.Text.IndexOf(",") == -1) && (result.Text.IndexOf("Inf") == -1))
-            {
-                result.Text += ",";
-            }
+
         }
 
         private void buttonZero_Click(object sender, EventArgs e)
@@ -157,42 +156,22 @@ namespace Calculator
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            if (Press())
-            {
-                calculator.SetValue(Convert.ToDouble(result.Text));
-                buttonAdd.Enabled = false;
-                result.Text = "0";
-            }
+
         }
 
         private void buttonSub_Click(object sender, EventArgs e)
         {
-            if (Press())
-            {
-                calculator.SetValue(Convert.ToDouble(result.Text));
-                buttonAdd.Enabled = false;
-                result.Text = "0";
-            }
+
         }
 
         private void buttonMultiplication_Click(object sender, EventArgs e)
         {
-            if (Press())
-            {
-                calculator.SetValue(Convert.ToDouble(result.Text));
-                buttonMultiplication.Enabled = false;
-                result.Text = "0";
-            }
+
         }
 
         private void buttonDivision_Click(object sender, EventArgs e)
         {
-            if(Press())
-            {
-                calculator.SetValue(Convert.ToDouble(result.Text));
-                buttonDivision.Enabled = false;
-                result.Text = "0";
-            }
+
         }
 
         private void buttonSqrt_Click(object sender, EventArgs e)
@@ -233,14 +212,79 @@ namespace Calculator
             }
         }
 
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void buttonResult_Click(object sender, EventArgs e)
         {
+            double secNumber = Convert.ToDouble(result.Text);
+            textHistory.Text = $"{textHistory.Text} {result.Text}=";
+            if (result.Text != string.Empty)
+            {
+                if (result.Text == "0")
+                    textHistory.Text = string.Empty;
+                switch (calculator.GetOperator())
+                {
+                    case "+":
+                        result.Text = calculator.Add(secNumber).ToString();
+                        break;
+                    case "-":
+                        result.Text = calculator.Substraction(secNumber).ToString();
+                        break;
+                    case "x":
+                        result.Text = calculator.Multiplication(secNumber).ToString();
+                        break;
+                    case "/":
+                        result.Text = calculator.Division(secNumber).ToString();
+                        break;
+                    default:
+                        textHistory.Text = result.Text;
+                        break;
+                }
+                calculator.SetValue(Convert.ToDouble(result.Text));
+                calculator.SetOperator(string.Empty);
+            }
+        }
 
+        private void buttonHistory_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonNum_Click(object sender, EventArgs e)
+        {
+            if (result.Text == "0" || enterVal)
+                result.Text = string.Empty;
+
+            enterVal = false;
+            Button button = (Button)sender;
+            if (button.Text == ",")
+            {
+                if (!result.Text.Contains(','))
+                    result.Text += button.Text;
+            }
+            else
+                result.Text += button.Text;
+
+        }
+
+        private void buttonMath_Click(object sender, EventArgs e)
+        {
+            if (calculator.GetValue() != 0)
+                buttonResult.PerformClick();
+            else
+                calculator.SetValue(Convert.ToDouble(result.Text));
+
+            Button button= (Button)sender;
+
+            calculator.SetOperator(button.Text);
+            calculator.SetValue(Convert.ToDouble(result.Text));
+
+            enterVal = true;
+            if (result.Text != "0")
+            {
+                textHistory.Text = $"{result.Text} {calculator.GetOperator()}";                
+                result.Text = string.Empty;
+            }
+
+            
         }
     }
 }
