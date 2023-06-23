@@ -82,23 +82,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Снимок.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\plus_minus_icon2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\61155.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\new.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\new1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\new2.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,7 +25,7 @@ namespace Calculator
 
         public void SetValue(double value)
         {
-            this.value = value;
+            this.value = Math.Round(value, 14);
         }
         public void SetOperator(string operation) 
         {
@@ -82,7 +83,7 @@ namespace Calculator
                 return value;
             }
             else
-                throw new Exception();
+                throw new DivideByZeroException();
         }
         public double Precent()
         {
@@ -104,11 +105,13 @@ namespace Calculator
         }
         public double MemoryAdd(double arg)
         {
-            return value + arg;
+            memory += arg;
+            return memory;
         }
         public double MemorySubtract(double arg)
         {
-            return value - arg;
+            memory -= arg;
+            return value;
         }
     }
 }

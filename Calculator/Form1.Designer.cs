@@ -66,56 +66,57 @@
             this.result.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.result.BackColor = System.Drawing.SystemColors.MenuText;
             this.result.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.result.Font = new System.Drawing.Font("Gadugi", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.result.Font = new System.Drawing.Font("Gadugi", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.result.ForeColor = System.Drawing.SystemColors.Window;
             this.result.HideSelection = false;
             this.result.Location = new System.Drawing.Point(6, 95);
-            this.result.MaxLength = 32;
+            this.result.MaxLength = 20;
             this.result.Name = "result";
             this.result.ReadOnly = true;
-            this.result.Size = new System.Drawing.Size(303, 47);
+            this.result.Size = new System.Drawing.Size(303, 39);
             this.result.TabIndex = 33;
             this.result.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.result.TextChanged += new System.EventHandler(this.result_TextChanged);
             // 
             // buttonErase
             // 
             this.buttonErase.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonErase.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonErase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonErase.FlatAppearance.BorderSize = 0;
             this.buttonErase.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonErase.Font = new System.Drawing.Font("Wingdings", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.buttonErase.ForeColor = System.Drawing.Color.Black;
+            this.buttonErase.ForeColor = System.Drawing.Color.Transparent;
             this.buttonErase.Location = new System.Drawing.Point(234, 213);
             this.buttonErase.Name = "buttonErase";
             this.buttonErase.Size = new System.Drawing.Size(75, 59);
             this.buttonErase.TabIndex = 57;
             this.buttonErase.Text = "ы";
             this.buttonErase.UseVisualStyleBackColor = false;
+            this.buttonErase.Click += new System.EventHandler(this.buttonErase_Click);
             // 
             // buttonClear
             // 
             this.buttonClear.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonClear.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonClear.FlatAppearance.BorderSize = 0;
             this.buttonClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonClear.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClear.ForeColor = System.Drawing.Color.Black;
+            this.buttonClear.ForeColor = System.Drawing.Color.Transparent;
             this.buttonClear.Location = new System.Drawing.Point(158, 213);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 59);
             this.buttonClear.TabIndex = 56;
             this.buttonClear.Text = "C";
             this.buttonClear.UseVisualStyleBackColor = false;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // buttonClearEntry
             // 
             this.buttonClearEntry.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonClearEntry.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonClearEntry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonClearEntry.FlatAppearance.BorderSize = 0;
             this.buttonClearEntry.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonClearEntry.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClearEntry.ForeColor = System.Drawing.Color.Black;
+            this.buttonClearEntry.ForeColor = System.Drawing.Color.Transparent;
             this.buttonClearEntry.Location = new System.Drawing.Point(82, 213);
             this.buttonClearEntry.Name = "buttonClearEntry";
             this.buttonClearEntry.Size = new System.Drawing.Size(75, 59);
@@ -127,11 +128,11 @@
             // buttonMod
             // 
             this.buttonMod.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonMod.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonMod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonMod.FlatAppearance.BorderSize = 0;
             this.buttonMod.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonMod.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMod.ForeColor = System.Drawing.Color.Black;
+            this.buttonMod.ForeColor = System.Drawing.Color.Transparent;
             this.buttonMod.Location = new System.Drawing.Point(6, 213);
             this.buttonMod.Name = "buttonMod";
             this.buttonMod.Size = new System.Drawing.Size(75, 59);
@@ -143,11 +144,11 @@
             // buttonDivision
             // 
             this.buttonDivision.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonDivision.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonDivision.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonDivision.FlatAppearance.BorderSize = 0;
             this.buttonDivision.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonDivision.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDivision.ForeColor = System.Drawing.Color.Black;
+            this.buttonDivision.ForeColor = System.Drawing.Color.Transparent;
             this.buttonDivision.Location = new System.Drawing.Point(234, 274);
             this.buttonDivision.Name = "buttonDivision";
             this.buttonDivision.Size = new System.Drawing.Size(75, 59);
@@ -159,11 +160,11 @@
             // buttonSqrt
             // 
             this.buttonSqrt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonSqrt.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonSqrt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonSqrt.FlatAppearance.BorderSize = 0;
             this.buttonSqrt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSqrt.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSqrt.ForeColor = System.Drawing.Color.Black;
+            this.buttonSqrt.ForeColor = System.Drawing.Color.Transparent;
             this.buttonSqrt.Location = new System.Drawing.Point(158, 274);
             this.buttonSqrt.Name = "buttonSqrt";
             this.buttonSqrt.Size = new System.Drawing.Size(75, 59);
@@ -175,11 +176,11 @@
             // buttonSquare
             // 
             this.buttonSquare.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonSquare.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonSquare.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonSquare.FlatAppearance.BorderSize = 0;
             this.buttonSquare.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSquare.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSquare.ForeColor = System.Drawing.Color.Black;
+            this.buttonSquare.ForeColor = System.Drawing.Color.Transparent;
             this.buttonSquare.Location = new System.Drawing.Point(82, 274);
             this.buttonSquare.Name = "buttonSquare";
             this.buttonSquare.Size = new System.Drawing.Size(75, 59);
@@ -191,11 +192,11 @@
             // buttonInverse
             // 
             this.buttonInverse.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonInverse.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonInverse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonInverse.FlatAppearance.BorderSize = 0;
             this.buttonInverse.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonInverse.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonInverse.ForeColor = System.Drawing.Color.Black;
+            this.buttonInverse.ForeColor = System.Drawing.Color.Transparent;
             this.buttonInverse.Location = new System.Drawing.Point(6, 274);
             this.buttonInverse.Name = "buttonInverse";
             this.buttonInverse.Size = new System.Drawing.Size(75, 59);
@@ -207,13 +208,13 @@
             // buttonResult
             // 
             this.buttonResult.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonResult.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonResult.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.buttonResult.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.buttonResult.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonResult.FlatAppearance.BorderSize = 2;
             this.buttonResult.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonResult.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonResult.ForeColor = System.Drawing.Color.Black;
+            this.buttonResult.ForeColor = System.Drawing.Color.Transparent;
             this.buttonResult.Location = new System.Drawing.Point(234, 518);
             this.buttonResult.Name = "buttonResult";
             this.buttonResult.Size = new System.Drawing.Size(75, 59);
@@ -225,11 +226,11 @@
             // buttonPoint
             // 
             this.buttonPoint.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonPoint.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonPoint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonPoint.FlatAppearance.BorderSize = 0;
             this.buttonPoint.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonPoint.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPoint.ForeColor = System.Drawing.Color.Black;
+            this.buttonPoint.ForeColor = System.Drawing.Color.Transparent;
             this.buttonPoint.Location = new System.Drawing.Point(158, 518);
             this.buttonPoint.Name = "buttonPoint";
             this.buttonPoint.Size = new System.Drawing.Size(75, 59);
@@ -241,11 +242,11 @@
             // buttonZero
             // 
             this.buttonZero.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonZero.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonZero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonZero.FlatAppearance.BorderSize = 0;
             this.buttonZero.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonZero.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonZero.ForeColor = System.Drawing.Color.Black;
+            this.buttonZero.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonZero.ForeColor = System.Drawing.Color.Transparent;
             this.buttonZero.Location = new System.Drawing.Point(82, 518);
             this.buttonZero.Name = "buttonZero";
             this.buttonZero.Size = new System.Drawing.Size(75, 59);
@@ -257,11 +258,11 @@
             // buttonNegative
             // 
             this.buttonNegative.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonNegative.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonNegative.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonNegative.FlatAppearance.BorderSize = 0;
             this.buttonNegative.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonNegative.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNegative.ForeColor = System.Drawing.Color.Black;
+            this.buttonNegative.ForeColor = System.Drawing.Color.Transparent;
             this.buttonNegative.Location = new System.Drawing.Point(6, 518);
             this.buttonNegative.Name = "buttonNegative";
             this.buttonNegative.Size = new System.Drawing.Size(75, 59);
@@ -273,11 +274,11 @@
             // buttonAdd
             // 
             this.buttonAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonAdd.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonAdd.FlatAppearance.BorderSize = 0;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAdd.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdd.ForeColor = System.Drawing.Color.Black;
+            this.buttonAdd.ForeColor = System.Drawing.Color.Transparent;
             this.buttonAdd.Location = new System.Drawing.Point(234, 457);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(75, 59);
@@ -289,11 +290,11 @@
             // buttonThree
             // 
             this.buttonThree.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonThree.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonThree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonThree.FlatAppearance.BorderSize = 0;
             this.buttonThree.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonThree.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThree.ForeColor = System.Drawing.Color.Black;
+            this.buttonThree.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThree.ForeColor = System.Drawing.Color.Transparent;
             this.buttonThree.Location = new System.Drawing.Point(158, 457);
             this.buttonThree.Name = "buttonThree";
             this.buttonThree.Size = new System.Drawing.Size(75, 59);
@@ -305,11 +306,11 @@
             // buttonTwo
             // 
             this.buttonTwo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonTwo.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonTwo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonTwo.FlatAppearance.BorderSize = 0;
             this.buttonTwo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTwo.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTwo.ForeColor = System.Drawing.Color.Black;
+            this.buttonTwo.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTwo.ForeColor = System.Drawing.Color.Transparent;
             this.buttonTwo.Location = new System.Drawing.Point(82, 457);
             this.buttonTwo.Name = "buttonTwo";
             this.buttonTwo.Size = new System.Drawing.Size(75, 59);
@@ -321,11 +322,11 @@
             // buttonOne
             // 
             this.buttonOne.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonOne.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonOne.FlatAppearance.BorderSize = 0;
             this.buttonOne.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonOne.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonOne.ForeColor = System.Drawing.Color.Black;
+            this.buttonOne.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOne.ForeColor = System.Drawing.Color.Transparent;
             this.buttonOne.Location = new System.Drawing.Point(6, 457);
             this.buttonOne.Name = "buttonOne";
             this.buttonOne.Size = new System.Drawing.Size(75, 59);
@@ -337,11 +338,11 @@
             // buttonSub
             // 
             this.buttonSub.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonSub.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonSub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonSub.FlatAppearance.BorderSize = 0;
             this.buttonSub.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSub.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSub.ForeColor = System.Drawing.Color.Black;
+            this.buttonSub.ForeColor = System.Drawing.Color.Transparent;
             this.buttonSub.Location = new System.Drawing.Point(234, 396);
             this.buttonSub.Name = "buttonSub";
             this.buttonSub.Size = new System.Drawing.Size(75, 59);
@@ -353,11 +354,11 @@
             // buttonSix
             // 
             this.buttonSix.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonSix.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonSix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonSix.FlatAppearance.BorderSize = 0;
             this.buttonSix.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSix.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSix.ForeColor = System.Drawing.Color.Black;
+            this.buttonSix.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSix.ForeColor = System.Drawing.Color.Transparent;
             this.buttonSix.Location = new System.Drawing.Point(158, 396);
             this.buttonSix.Name = "buttonSix";
             this.buttonSix.Size = new System.Drawing.Size(75, 59);
@@ -369,11 +370,11 @@
             // buttonFive
             // 
             this.buttonFive.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonFive.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonFive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonFive.FlatAppearance.BorderSize = 0;
             this.buttonFive.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonFive.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFive.ForeColor = System.Drawing.Color.Black;
+            this.buttonFive.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonFive.ForeColor = System.Drawing.Color.Transparent;
             this.buttonFive.Location = new System.Drawing.Point(82, 396);
             this.buttonFive.Name = "buttonFive";
             this.buttonFive.Size = new System.Drawing.Size(75, 59);
@@ -385,11 +386,11 @@
             // buttonFour
             // 
             this.buttonFour.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonFour.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonFour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonFour.FlatAppearance.BorderSize = 0;
             this.buttonFour.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonFour.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFour.ForeColor = System.Drawing.Color.Black;
+            this.buttonFour.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonFour.ForeColor = System.Drawing.Color.Transparent;
             this.buttonFour.Location = new System.Drawing.Point(6, 396);
             this.buttonFour.Name = "buttonFour";
             this.buttonFour.Size = new System.Drawing.Size(75, 59);
@@ -401,11 +402,11 @@
             // buttonMultiplication
             // 
             this.buttonMultiplication.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonMultiplication.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonMultiplication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonMultiplication.FlatAppearance.BorderSize = 0;
             this.buttonMultiplication.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonMultiplication.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMultiplication.ForeColor = System.Drawing.Color.Black;
+            this.buttonMultiplication.ForeColor = System.Drawing.Color.Transparent;
             this.buttonMultiplication.Location = new System.Drawing.Point(234, 335);
             this.buttonMultiplication.Name = "buttonMultiplication";
             this.buttonMultiplication.Size = new System.Drawing.Size(75, 59);
@@ -417,11 +418,11 @@
             // buttonNine
             // 
             this.buttonNine.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonNine.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonNine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonNine.FlatAppearance.BorderSize = 0;
             this.buttonNine.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonNine.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNine.ForeColor = System.Drawing.Color.Black;
+            this.buttonNine.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNine.ForeColor = System.Drawing.Color.Transparent;
             this.buttonNine.Location = new System.Drawing.Point(158, 335);
             this.buttonNine.Name = "buttonNine";
             this.buttonNine.Size = new System.Drawing.Size(75, 59);
@@ -433,11 +434,11 @@
             // buttonEight
             // 
             this.buttonEight.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonEight.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonEight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonEight.FlatAppearance.BorderSize = 0;
             this.buttonEight.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonEight.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEight.ForeColor = System.Drawing.Color.Black;
+            this.buttonEight.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEight.ForeColor = System.Drawing.Color.Transparent;
             this.buttonEight.Location = new System.Drawing.Point(82, 335);
             this.buttonEight.Name = "buttonEight";
             this.buttonEight.Size = new System.Drawing.Size(75, 59);
@@ -449,11 +450,11 @@
             // buttonSeven
             // 
             this.buttonSeven.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonSeven.BackColor = System.Drawing.SystemColors.Menu;
+            this.buttonSeven.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.buttonSeven.FlatAppearance.BorderSize = 0;
             this.buttonSeven.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSeven.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSeven.ForeColor = System.Drawing.Color.Black;
+            this.buttonSeven.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSeven.ForeColor = System.Drawing.Color.Transparent;
             this.buttonSeven.Location = new System.Drawing.Point(6, 335);
             this.buttonSeven.Name = "buttonSeven";
             this.buttonSeven.Size = new System.Drawing.Size(75, 59);
@@ -469,13 +470,14 @@
             this.buttonMemoryShow.FlatAppearance.BorderSize = 0;
             this.buttonMemoryShow.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonMemoryShow.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMemoryShow.ForeColor = System.Drawing.Color.White;
+            this.buttonMemoryShow.ForeColor = System.Drawing.Color.LightGray;
             this.buttonMemoryShow.Location = new System.Drawing.Point(247, 172);
             this.buttonMemoryShow.Name = "buttonMemoryShow";
             this.buttonMemoryShow.Size = new System.Drawing.Size(52, 35);
             this.buttonMemoryShow.TabIndex = 62;
             this.buttonMemoryShow.Text = "MS";
             this.buttonMemoryShow.UseVisualStyleBackColor = false;
+            this.buttonMemoryShow.Click += new System.EventHandler(this.ButtonMemory_Click);
             // 
             // buttonMemorySub
             // 
@@ -484,13 +486,14 @@
             this.buttonMemorySub.FlatAppearance.BorderSize = 0;
             this.buttonMemorySub.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonMemorySub.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMemorySub.ForeColor = System.Drawing.Color.White;
+            this.buttonMemorySub.ForeColor = System.Drawing.Color.LightGray;
             this.buttonMemorySub.Location = new System.Drawing.Point(189, 172);
             this.buttonMemorySub.Name = "buttonMemorySub";
             this.buttonMemorySub.Size = new System.Drawing.Size(52, 35);
             this.buttonMemorySub.TabIndex = 61;
             this.buttonMemorySub.Text = "M-";
             this.buttonMemorySub.UseVisualStyleBackColor = false;
+            this.buttonMemorySub.Click += new System.EventHandler(this.ButtonMemory_Click);
             // 
             // buttonMemoryAdd
             // 
@@ -499,13 +502,14 @@
             this.buttonMemoryAdd.FlatAppearance.BorderSize = 0;
             this.buttonMemoryAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonMemoryAdd.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMemoryAdd.ForeColor = System.Drawing.Color.White;
+            this.buttonMemoryAdd.ForeColor = System.Drawing.Color.LightGray;
             this.buttonMemoryAdd.Location = new System.Drawing.Point(130, 172);
             this.buttonMemoryAdd.Name = "buttonMemoryAdd";
             this.buttonMemoryAdd.Size = new System.Drawing.Size(52, 35);
             this.buttonMemoryAdd.TabIndex = 60;
             this.buttonMemoryAdd.Text = "M+";
             this.buttonMemoryAdd.UseVisualStyleBackColor = false;
+            this.buttonMemoryAdd.Click += new System.EventHandler(this.ButtonMemory_Click);
             // 
             // buttonMemoryR
             // 
@@ -514,13 +518,14 @@
             this.buttonMemoryR.FlatAppearance.BorderSize = 0;
             this.buttonMemoryR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonMemoryR.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMemoryR.ForeColor = System.Drawing.Color.White;
+            this.buttonMemoryR.ForeColor = System.Drawing.Color.LightGray;
             this.buttonMemoryR.Location = new System.Drawing.Point(72, 172);
             this.buttonMemoryR.Name = "buttonMemoryR";
             this.buttonMemoryR.Size = new System.Drawing.Size(52, 35);
             this.buttonMemoryR.TabIndex = 59;
             this.buttonMemoryR.Text = "MR";
             this.buttonMemoryR.UseVisualStyleBackColor = false;
+            this.buttonMemoryR.Click += new System.EventHandler(this.ButtonMemory_Click);
             // 
             // buttonMemoryClear
             // 
@@ -529,13 +534,14 @@
             this.buttonMemoryClear.FlatAppearance.BorderSize = 0;
             this.buttonMemoryClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonMemoryClear.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMemoryClear.ForeColor = System.Drawing.Color.White;
+            this.buttonMemoryClear.ForeColor = System.Drawing.Color.LightGray;
             this.buttonMemoryClear.Location = new System.Drawing.Point(14, 172);
             this.buttonMemoryClear.Name = "buttonMemoryClear";
             this.buttonMemoryClear.Size = new System.Drawing.Size(52, 35);
             this.buttonMemoryClear.TabIndex = 58;
             this.buttonMemoryClear.Text = "MC";
             this.buttonMemoryClear.UseVisualStyleBackColor = false;
+            this.buttonMemoryClear.Click += new System.EventHandler(this.ButtonMemory_Click);
             // 
             // textHistory
             // 
@@ -543,13 +549,12 @@
             this.textHistory.BackColor = System.Drawing.SystemColors.MenuText;
             this.textHistory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textHistory.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textHistory.ForeColor = System.Drawing.SystemColors.Window;
+            this.textHistory.ForeColor = System.Drawing.Color.LightGray;
             this.textHistory.Location = new System.Drawing.Point(6, 38);
             this.textHistory.Name = "textHistory";
             this.textHistory.Size = new System.Drawing.Size(303, 22);
             this.textHistory.TabIndex = 63;
             this.textHistory.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textHistory.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // Form1
             // 
@@ -595,8 +600,6 @@
             this.MinimumSize = new System.Drawing.Size(332, 623);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.Click += new System.EventHandler(this.ButtonOperation_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
