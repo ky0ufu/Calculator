@@ -599,7 +599,7 @@
             this.MaximumSize = new System.Drawing.Size(332, 623);
             this.MinimumSize = new System.Drawing.Size(332, 623);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Калькулятор";
             this.ResumeLayout(false);
             this.PerformLayout();
 

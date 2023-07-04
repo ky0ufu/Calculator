@@ -89,7 +89,7 @@ namespace Calculator
             Button button = (Button)sender;
             if (result.Text.Length == 20)
                 return;
-            if (result.Text.Length - result.Text.IndexOf(',') > 14)
+            if (result.Text.IndexOf(',') != -1 && result.Text.Length - result.Text.IndexOf(',') > 14)
                 return;
 
             if (result.Text == "Деление на ноль")
